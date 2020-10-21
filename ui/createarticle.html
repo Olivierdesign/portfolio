@@ -2,10 +2,9 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Olivier Ishimwe - Webpage</title>
-        <link rel="stylesheet" href="./assets/css/Signup.css">
+        <title>Create a blog</title>
+        <link rel="stylesheet" href="../ui/assets/css/createarticle.css">
         <link rel="icon" href="../UI/assets/img/Oliviertop.JPG">
-      
       </head>
 
   <body>
@@ -13,7 +12,6 @@
       <div class="container">
         <div id="branding">
         </div>
-        <!-- navbar -->
         <nav>
           <nav>
             <ul>
@@ -24,35 +22,41 @@
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
+                <li><a href="#">Articles</a></li>
             </ul>
         </nav>
       </div>
     </header>
 
-    <body>
-        <div class="signup-form">
-          <h1>Sign up below</h1>
-          <div class="txtb">
-          <form id="signupform">
-                <label>Full Name :</label>
-                <input type="text" id="fname" value="" placeholder="Type your Full Name">
-          </div>
+<html>
+    <head>
+        <title>Create a blog</title>
+    </head>
+        
+        <body>
+            <div class=".createblog">
+                <h2>Create your blog below</h2>
+                <div class="alert"></div>
 
-          <div class="txtb">
-            <label>E-mail :</label>
-            <input type="text" id="email" value="" placeholder="Type your E-mail">
-          </div>
+                <form id="createblog">
+                    <div class="txtb">
+                        <input type="text" name="title" value="" placeholder="Type your blog title @here" id="title">
+                </div>
 
-          <div class="txtb">
-            <label>password :</label>
-            <input type="password" id="psw" value="" placeholder="Choose Password">
-          </div>
+                    <div class="txtb">
+                        <input type="text" name="author" value="" placeholder="Author's Name" id="author">
+                </div>
+        
+                <div class="txtb">
+                    <input type="text" name="content" value="" placeholder="Type your blog content @here" id="content">
+                
+                    <textarea></textarea>
+                </div>
 
-          <input type="submit" value="Send" class="btn">
-           <p id="notice"></p>
-          </form>
 
-      </div>
+            <input type="submit" id="insert" value="PUBLISH YOUR BLOG">
+    
+        </form>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
@@ -80,7 +84,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-    <script src="../ui/assets/js/signup.js"></script>
+    <script src="../ui/assets/js/createarticle.js"></script>
 
-</body>
+    </body>
 </html>

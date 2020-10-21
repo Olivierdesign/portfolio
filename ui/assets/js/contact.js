@@ -42,7 +42,7 @@
 // }
 
 
-var messagesdb=firebase.database().ref("messages");
+var messagesdb=firebase.database().ref("message");
 
 document.getElementById('contact-form').addEventListener('submit', submitForm);
 function submitForm(e) {

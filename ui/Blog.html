@@ -15,10 +15,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
+                <button onclick="logout()">LOGOUT</button>
             </ul>
         </nav>
       </div>
@@ -26,7 +26,7 @@
 
   <body>
     <div>
-      <h1>Welcome to my blog</h1>	      
+      <h1>Hello and Welcome to my blog</h1>	      
     </div>
 
     <div class="box-area">
@@ -41,7 +41,7 @@
       <div class="single-box">
         <div class="img-area"></div>
         <div class="img-text">
-          <span class="header-text"><strong>Artcicle 2</strong></span>
+          <span class="header-text"><strong>Article 2</strong></span>
           <p>Lorem  platea dictumst. Fusce et ornare leo, ut varius massa. Praesent quis felis id dolor laoreet bibendum id at dui. Maecenas ut dolor scelerisque, consectetur orci at, mattis lacus. Vivamus aliquet nunc non purus tincidunt maximus. Phasellus posuere rutrum metus, vel ultricies lorem iaculis quis. Ut feugiat aliquam tellus rutrum tristique. Donec id lorem non nisi pharetra gravida eget dapibus est. Duis in varius sem. Morbi feugiat ipsum velit, eget ultricies neque finibus sit amet. Aenean elit tortor, posuere eu mattis sed, ultrices vitae leo.</p>
         </div>
       </div>
@@ -50,7 +50,7 @@
         <div class="img-area"></div>
         <div class="img-text">
           <span class="header-text"><strong>Article 3</strong></span>
-          <p>Loremt varius massa. Praesent quis felis id dolor laoreet bibendum id at dui. Maecenas ut dolor scelerisque, consectetur orci at, mattis lacus. Vivamus aliquet nunc non purus tincidunt maximus. Phasellus posuere rutrum metus, vel ultricies lorem iaculis quis. Ut feugiat aliquam tellus rutrum tristique. Donec id lorem non nisi pharetra gravida eget dapibus est. Duis in varius sem. Morbi feugiat ipsum velit, eget ultricies neque finibus sit amet. Aenean elit tortor, posuere eu mattis sed, ultrices vitae leo.</p>
+          <p>Lorem varius massa. Praesent quis felis id dolor laoreet bibendum id at dui. Maecenas ut dolor scelerisque, consectetur orci at, mattis lacus. Vivamus aliquet nunc non purus tincidunt maximus. Phasellus posuere rutrum metus, vel ultricies lorem iaculis quis. Ut feugiat aliquam tellus rutrum tristique. Donec id lorem non nisi pharetra gravida eget dapibus est. Duis in varius sem. Morbi feugiat ipsum velit, eget ultricies neque finibus sit amet. Aenean elit tortor, posuere eu mattis sed, ultrices vitae leo.</p>
         </div>
       </div>
     </div>
@@ -58,7 +58,45 @@
     <section id="Welcome">
 		<div class="container">
         <div id="Footer">
-        <p>Work with me and benefits will be inevitable to you!</p>
-    </div>
+          <h1>Work with me and benefits will be inevitable to you!</h1>
+        </div>
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAel5BGU8rtQWTKGefz8fWHecaNpeGI9Vk",
+    authDomain: "contactform-7f14f.firebaseapp.com",
+    databaseURL: "https://contactform-7f14f.firebaseio.com",
+    projectId: "contactform-7f14f",
+    storageBucket: "contactform-7f14f.appspot.com",
+    messagingSenderId: "817079134800",
+    appId: "1:817079134800:web:b9fe1d0e9b7ba65fb3ff55",
+    measurementId: "G-QP7LKQ2699"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+  const db=firebase.firestore();
+  const auth=firebase.auth();
+
+function logout(){
+  firebase.auth().signOut().then(function() {
+  location.href="index.html"
+}).catch(function(error) {
+  // An error happened.
+});
+}
+  
+</script>
+    
 </html>
