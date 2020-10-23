@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Read, Write, Update Article</title>
+    </head>
+
+    <body>
+        Name <input id="namebox" type="text"></input> <br></br>
+        Roll No <input id="rollbox" type="text"></input> <br></br>
+        Section <input id="secbox" type="text"></input> <br></br>
+        Gender <input id="genbox" type="text"></input> <br></br>
+        <br></br>
+
+        <button id="insert">INSERT</button>
+        <button id="insert">SELECT</button>
+        <button id="insert">UPDATE</button>
+        <button id="insert">DELETE</button>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+<script id="MainScript">
+
+    var firebaseConfig = {
+    apiKey: "AIzaSyAel5BGU8rtQWTKGefz8fWHecaNpeGI9Vk",
+    authDomain: "contactform-7f14f.firebaseapp.com",
+    databaseURL: "https://contactform-7f14f.firebaseio.com",
+    projectId: "contactform-7f14f",
+    storageBucket: "contactform-7f14f.appspot.com",
+    messagingSenderId: "817079134800",
+    appId: "1:817079134800:web:b9fe1d0e9b7ba65fb3ff55",
+    measurementId: "G-QP7LKQ2699"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+//---------------Ready Data----------------------//
+var nameV, rollV, secV, genV;
+
+function Ready(){
+    nameV = document.getElementById('namebox').value;
+    rollV = document.getElementById('rollbox').value;
+    secV = document.getElementById('secbox').value;
+    genV = document.getElementById('genbox').value;
+}
+
+//------------Insertion Process--------------------//
+document.getElementById('insert').onclick = function(){
+    Ready();
+    firebase.database().ref('student/'+rollV).set({
+        NameOfStudent: nameV,
+        RollNo: rollV,
+        Section: secV,
+        Gender: genV
+    });
+}
+
+//----------------Selection process------------------//
+document.getElementById("select").onclick = function(){
+    Ready();
+    firebase.database().ref('student/'+rollV).on('value', function(snapshot){
+        document.getElementById('namebox').value= snapshot.val().NameOfStudent.val().
+        document.getElementById('secbox').value= snapshot.val().Section;
+        document.getElementById('genbox').value= snapshot.val().Gender;
+    });
+}
+
+//------------Update Process--------------------//
+document.getElementById('update').onclick = function(){
+    Ready();
+    firebase.database().ref('student/'+rollV).update({
+        NameOfStudent: nameV,
+        Section: secV,
+        Gender: genV
+    });
+}
+
+//------------Delete Process--------------------//
+document.getElementById('delete').onclick = function(){
+    Ready();
+    firebase.database().ref('student/'+rollV).remove();
+}
+
+</script>
+    </body>
+</html>

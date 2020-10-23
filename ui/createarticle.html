@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/css/Contact.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Create a blog</title>
+        <link rel="stylesheet" href="../ui/assets/css/createarticle.css">
+        <link rel="icon" href="../UI/assets/img/Oliviertop.JPG">
+      </head>
 
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">OliDesign</label>
+  <body>
+	<header>
+      <div class="container">
+        <div id="branding">
+        </div>
+        <nav>
+          <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
@@ -23,39 +22,42 @@
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
+                <li><a href="#">Articles</a></li>
             </ul>
         </nav>
       </div>
+    </header>
+
+<html>
+    <head>
+        <title>Create a blog</title>
+    </head>
+        
         <body>
-            <div class=".contact-form">
-                <h2>Get in touch with me today</h2>
+            <div class=".createblog">
+                <h2>Create your blog below</h2>
                 <div class="alert"></div>
-                <form id="contact-form">
+
+                <form id="createblog">
                     <div class="txtb">
-                        <label>Name :</label>
-                        <input type="text" name="Name" value="" placeholder="Type your Name" id="fname">
+                        <input type="text" name="title" value="" placeholder="Type your blog title @here" id="title">
+                </div>
+
+                    <div class="txtb">
+                        <input type="text" name="author" value="" placeholder="Author's Name" id="author">
                 </div>
         
                 <div class="txtb">
-                    <label>E-mail :</label>
-                    <input type="text" name="E-mail" value="" placeholder="Type your E-mail" id="email">
+                    <input type="text" name="content" value="" placeholder="Type your blog content @here" id="content">
+                
+                    <textarea></textarea>
                 </div>
-        
-            <div class="txtb">
-                <label>Telephone :</label>
-                <input type="text" name="Number" value="" placeholder="Type your Number"  id="telephone">
-        </div>
-        
-        <div class="txtb">
-            <label> Message :</label>
-            <input type="text" name="" value="" placeholder="Type your Message" id="message">
-        
-            </div>
-            <input type="submit" value="Send Message">
-                </form>
+
+
+            <input type="submit" id="insert" value="PUBLISH YOUR BLOG">
     
-                <!-- @TODO - Validation -->
-        </div>
+        </form>
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
@@ -82,7 +84,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-    <script src="../ui/assets/js/contact.js"></script>
+    <script src="../ui/assets/js/createarticle.js"></script>
 
     </body>
-    </html>    
+</html>

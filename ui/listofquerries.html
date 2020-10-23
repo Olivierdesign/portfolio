@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Messages</title>
+        <link rel="stylesheet" href="./assets/css/listofquerries.css">
+        <link rel="icon" href="../UI/assets/img/Oliviertop.JPG">
+      </head>
+
+  <body>
+	<header>
+      <div class="container">
+        <div id="branding"></div>
+      </div>
+    </header>
+
+<div class="admin-wrapper">
+
+
+<!-- Lef-sidebar-->
+    <div class="left-sidebar">
+        <ul>
+            <li><a href="listofquerries.html">Manage Blog</a></li>
+            <li><a href="Signup.html">Manage Users</a></li>
+            <li><a href="Adminpage.html">Manage Messages</a></li>
+        </ul>
+    </div>
+
+<!-- Admin content-->
+    <div class="admin-content">
+        <div class="button-group">
+            <a href="createarticle.html" class="btn btn-big">Add an Article</a>
+            <a href="listofquerries.html" class="btn btn-big">View all Articles</a>
+        </div>
+
+        <div class="content">
+
+            <h2 class="page-title">Manage Messages</h2>
+
+        <form action="Contact.html" method="post">
+            <div>
+                <label>Title</label>
+                <input type="text" name="title" class="text-input">
+            </div>
+            <div>
+                <label>Body</label>
+                <textarea name="body" id="body"></textarea>            
+            </div>
+
+            <div>
+                <label>Topic</label>
+                <select name="topic" class="text-input">
+                    <option value="Salute">Salute</option>
+                    <option value="Friendly">Friendly</option>
+                    <option value="Official">Official</option>
+                </select>
+            </div>
+            <div>
+<button type="submit" class="btn btn-big">Add Post</button>
+            </div>
+        </form>        
+
+    </div>
+
+<!-- ckeditor-->
+<script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+
+    </body>
+
+    </html>
