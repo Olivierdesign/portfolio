@@ -27,12 +27,6 @@ margin-top: 10%;
 	color: white;
 }
 
-img{
-    width: max-content;
-    margin-left: 200px;
-    padding: 100px;
-}
-
 div {
 	display: block;
 }
@@ -111,6 +105,7 @@ a.active, a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
 }
 nav ul li{
     display: block;

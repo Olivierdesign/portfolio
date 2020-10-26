@@ -1,8 +1,9 @@
 body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;;
-	padding: 20;
+	padding: 50;
     margin: 0;
-    background-color: #ff0000;
+    background-image: url(../img/landingpic.jpeg);
+    background-size: cover;
 }
 
 .container {
@@ -109,6 +110,8 @@ a.active, a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
+
 }
 nav ul li{
     display: block;
@@ -170,13 +173,13 @@ body{
 
 }
 .single-box:nth-child(1) .img-area{
-	background-image: url(../img/service.jpeg);
+	background-image: url(../img/background.jpg);
 }
 .single-box:nth-child(2) .img-area{
-	background-image: url(../img/service.jpeg);
+	background-image: url(../img/lap.jpeg);
 }
 .single-box:nth-child(3) .img-area{
-	background-image: url(../img/service.jpeg);
+	background-image: url(../img/pexels-photo-821754.jpeg);
 }
 .header-text{
 	font-size: 24px;
@@ -193,6 +196,6 @@ body{
 	line-height: 30px;
 }
 .single-box: hover{
-	background: #e84393;
+	background: #e84393;`
 	color: #fff;
 }
