@@ -11,17 +11,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f1f1;
+    background-color: #fdfdfd;
 }
 
 .about-section{
-    background: url(../img/contactimage.jpeg) no repeat left;
+    background: url(../img/landingpic.jpeg) no-repeat left;
     background-size: 55%;
-    background-color: #fdfdfd;
+    background-color: rgb(202, 232, 196);
     overflow: hidden;
     padding: 100% 0;
-}
-
+} 
 .inner-container{
     width: 55%;
     float: right;
@@ -39,6 +38,7 @@ body{
     font-size: 13px;
     color: #545454;
     line-height: 30px;
+    text-align: justify;
     margin-bottom: 40px;
 }
 
@@ -46,7 +46,7 @@ body{
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 13px; 
 }
 
 @media screen and (max-width:1200px){
@@ -54,7 +54,7 @@ body{
         padding: 80px;
     }
 } 
-@media screen and (max-width:980px){
+@media screen and (max-width:1000px){
     .about-section{
         background-size: 100%;
         padding: 100px 40px;
@@ -63,3 +63,12 @@ body{
         width: 100px;
     }
 }
+
+@media screen and (max-width:600px){ 
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+} 

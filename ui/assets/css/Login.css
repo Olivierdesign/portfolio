@@ -2,7 +2,8 @@ body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;;
 	padding: 20;
     margin: 0;
-    background-color: #615959;
+    background-image: url(../img/landingpic.jpeg);
+    background-size: cover;
 }
 
 .container {
@@ -181,5 +182,6 @@ a:hover,a.active{
     color: white;
     cursor: pointer;
     margin-top: 8px;
-    width: 500px;
+    width: 80px;
+    float: center;
 }

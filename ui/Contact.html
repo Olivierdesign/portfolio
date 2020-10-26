@@ -14,75 +14,105 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">OliDesign</label>
+        <label class="logo">OliDeZiGn</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="blognew.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
             </ul>
-        </nav>
-      </div>
-        <body>
+    </nav>
+
+    <div class=".contact-form">
+        <h2>Get in touch with me today</h2>    
+    </div>
+
+    <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>KK 376 ST Niboye Road, <br>Kicukiro District, Kigali City,<br>RWANDA</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                        <h3>Telephone</h3>
+                        <p>+250-784501266</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                        <h3>E-mail</h3>
+                        <p>olivier.professional7@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
             <div class=".contact-form">
-                <h2>Get in touch with me today</h2>
+                <h2>Write a Message</h2>
                 <div class="alert"></div>
                 <form id="contact-form">
                     <div class="txtb">
-                        <label>Name :</label>
+                        <label>Name:</label>
                         <input type="text" name="Name" value="" placeholder="Type your Name" id="fname">
-                </div>
+                    </div>
         
-                <div class="txtb">
-                    <label>E-mail :</label>
-                    <input type="text" name="E-mail" value="" placeholder="Type your E-mail" id="email">
-                </div>
+                    <div class="txtb">
+                        <label>E-mail:</label>
+                        <input type="text" name="E-mail" value="" placeholder="Type your E-mail" id="email">
+                    </div>
         
-            <div class="txtb">
-                <label>Telephone :</label>
-                <input type="text" name="Number" value="" placeholder="Type your Number"  id="telephone">
-        </div>
+                    <div class="txtb">
+                        <label>Telephone:</label>
+                        <input type="text" name="Number" value="" placeholder="Type your Number"  id="telephone">
+                    </div>
         
-        <div class="txtb">
-            <label> Message :</label>
-            <input type="text" name="" value="" placeholder="Type your Message" id="message">
-        
-            </div>
-            <input type="submit" value="Send Message">
+                    <div class="txtb">
+                        <label> Message:</label>
+                        <input type="text" name="" value="" placeholder="Type your Message" id="message">
+                    
+                    </div>
+                    <input type="submit" value="Send Message">
                 </form>
-    
-                <!-- @TODO - Validation -->
-        </div>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+            </div>
+    </div>
+    <!-- @TODO - Validation -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyAel5BGU8rtQWTKGefz8fWHecaNpeGI9Vk",
-    authDomain: "contactform-7f14f.firebaseapp.com",
-    databaseURL: "https://contactform-7f14f.firebaseio.com",
-    projectId: "contactform-7f14f",
-    storageBucket: "contactform-7f14f.appspot.com",
-    messagingSenderId: "817079134800",
-    appId: "1:817079134800:web:b9fe1d0e9b7ba65fb3ff55",
-    measurementId: "G-QP7LKQ2699"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-    <script src="../ui/assets/js/contact.js"></script>
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAel5BGU8rtQWTKGefz8fWHecaNpeGI9Vk",
+            authDomain: "contactform-7f14f.firebaseapp.com",
+            databaseURL: "https://contactform-7f14f.firebaseio.com",
+            projectId: "contactform-7f14f",
+            storageBucket: "contactform-7f14f.appspot.com",
+            messagingSenderId: "817079134800",
+            appId: "1:817079134800:web:b9fe1d0e9b7ba65fb3ff55",
+            measurementId: "G-QP7LKQ2699"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="../ui/assets/js/contact.js"></script>
 
     </body>
     </html>    
