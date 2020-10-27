@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Olivier</title>
     <link rel="stylesheet" href="./assets/css/Contact.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body>
+<header>
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -24,14 +24,18 @@
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
             </ul>
-    </nav>
+        </nav>
+      </div>
+  </header>
 
-    <div class=".contact-form">
-        <h2>Get in touch with me today</h2>    
-    </div>
-
-    <div class="container">
-            <div class="contactinfo">
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Get in touch with me today</h2>
+            <p>Are you looking for partnership in what I am doing? Just Contact me.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
                 <div class="box">
                     <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                     <div class="text">
@@ -57,34 +61,36 @@
                 </div>
             </div>
 
-            <div class=".contact-form">
-                <h2>Write a Message</h2>
-                <div class="alert"></div>
-                <form id="contact-form">
-                    <div class="txtb">
-                        <label>Name:</label>
-                        <input type="text" name="Name" value="" placeholder="Type your Name" id="fname">
+            <div class="contactForm">
+                <form>
+                    <h2>Write a Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Your Full Name</span>
                     </div>
-        
-                    <div class="txtb">
-                        <label>E-mail:</label>
-                        <input type="text" name="E-mail" value="" placeholder="Type your E-mail" id="email">
+                
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Your E-mail</span>
                     </div>
-        
-                    <div class="txtb">
-                        <label>Telephone:</label>
-                        <input type="text" name="Number" value="" placeholder="Type your Number"  id="telephone">
+    
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Your Telephone</span>
                     </div>
-        
-                    <div class="txtb">
-                        <label> Message:</label>
-                        <input type="text" name="" value="" placeholder="Type your Message" id="message">
-                    
+                
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Your Message</span>
+                    </div>    
+
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
                     </div>
-                    <input type="submit" value="Send Message">
                 </form>
             </div>
-    </div>
+        </div>
+    </section>
     <!-- @TODO - Validation -->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>

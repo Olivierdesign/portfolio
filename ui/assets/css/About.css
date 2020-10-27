@@ -53,12 +53,12 @@ a.active, a:hover{
 }
 
 .about-section{
-    background-size: 20%;
-    background: url(../img/landingpic.jpeg) no-repeat left;
+    background-size: 0%;
+    background: url(../img/profile\ image.jpg) no-repeat;
     background-color: rgb(132, 174, 123);
     overflow: hidden;
     padding: 0%;
-} 
+}
 .inner-container{
     width: 55%;
     float: right;

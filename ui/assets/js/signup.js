@@ -4,6 +4,8 @@ function submitForm(e) {
     e.preventDefault();
     var email=document.getElementById('email').value;
     var password=document.getElementById('psw').value;
+    document.getElementById('contact-form').reset();
+
 
     auth.createUserWithEmailAndPassword(email, password).then(()=>{
       window.location.assign('Adminpage.html');
