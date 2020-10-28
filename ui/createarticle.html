@@ -12,17 +12,21 @@
       <div class="container">
         <div id="branding">
         </div>
+
         <nav>
-          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">OliDeZiGn</label>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
+                <li><a href="About.html">Profile</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="blognew.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Signup.html">Signup</a></li>
                 <li><a href="Login.html">Login</a></li>
-                <li><a href="#">Articles</a></li>
             </ul>
         </nav>
       </div>
@@ -40,7 +44,7 @@
 
                 <form id="createblog">
                     <div class="txtb">
-                        <input type="text" name="title" value="" placeholder="Type your blog title @here" id="title">
+                        <input type="text" name="title" value="" placeholder="Type your blog title" id="title">
                 </div>
 
                     <div class="txtb">
@@ -48,12 +52,15 @@
                 </div>
         
                 <div class="txtb">
-                    <input type="text" name="content" value="" placeholder="Type your blog content @here" id="content">
+                    <input type="text" name="content" value="" placeholder="Type your blog content" id="content">
                 
                     <textarea></textarea>
                 </div>
 
-
+                <div class="txtb">
+                    <input type="text" name="image" value="" placeholder="Blog Image" id="author">
+            </div>
+    
             <input type="submit" id="insert" value="PUBLISH YOUR BLOG">
     
         </form>

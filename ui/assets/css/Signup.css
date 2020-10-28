@@ -27,12 +27,6 @@ margin-top: 10%;
 	color: white;
 }
 
-img{
-    width: max-content;
-    margin-left: 200px;
-    padding: 100px;
-}
-
 div {
 	display: block;
 }
@@ -52,7 +46,7 @@ label.logo{
     font-weight: bold;
 }
 nav{
-    background: rgb(18, 18, 69);
+    background: rgb(33, 62, 52);
     height: 80px;
     width: 100%;
 }
@@ -90,7 +84,7 @@ a.active, a:hover{
 }
 @media (max-width:952px){
     label.logo{
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 50px;
     }
     nav ul li a{
@@ -104,13 +98,14 @@ a.active, a:hover{
     }
     ul{
         position: absolute;
-        width: 100px;
-        height: 100vh;
-        background: rgb(69, 32, 32);
+        width: 120px;
+        height: 100%;
+        background: rgb(33, 62, 52);
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
 }
 nav ul li{
     display: block;
@@ -134,8 +129,7 @@ a:hover,a.active{
     margin-bottom: 100px;
 }
 
-
-.signup-form{
+.contact-form{
     width: 85%;
     max-width: 600px;
     background: #ffffff;
@@ -143,7 +137,7 @@ a:hover,a.active{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 10px;
+    padding: 30px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
@@ -151,7 +145,7 @@ a:hover,a.active{
     font-family: "Montserrat", sans-serif;
 }
 
-.signup-form h1{
+.contact-form h1{
     margin-top: 0;
     font-weight: 200px;
 }
@@ -178,11 +172,21 @@ a:hover,a.active{
 }
 .btn{
     display: inline-block;
-    background: #143bbb;
-    padding: 14px 0;
+    background: #355de0;
+    padding: 8px 0;
     color: white;
-    text-transform: uppercase;
     cursor: pointer;
     margin-top: 8px;
-    width: 100px;
+    width: 80px;
+    float: center;
+}
+.btn2{
+    display: inline-block;
+    background: #0f541d;
+    padding: 5px 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 300px;
+    float: center;
 }
