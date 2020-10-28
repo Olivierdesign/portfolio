@@ -29,7 +29,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active, a:hover{
-    background: #476d1e;
+    background: #78836c;
     transition: .5s;
 }
 .checkbtn{
@@ -110,7 +110,7 @@ a:hover,a.active{
     display: block;
     width: 100%;
     height: 100%;
-    background: black;
+    background: rgb(0, 0, 0);
     position: absolute;
     top: 0;
     left: 0;
