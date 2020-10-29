@@ -8,11 +8,6 @@
       </head>
 
   <body>
-	<header>
-      <div class="container">
-        <div id="branding">
-        </div>
-
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -20,26 +15,15 @@
             </label>
             <label class="logo">OliDeZiGn</label>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">Profile</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Signup.html">Signup</a></li>
-                <li><a href="Login.html">Login</a></li>
+                <li><a href="createarticle.html">Create</a></li>
+                <li><a href="Login.html">Logout</a></li>
+                <li><a href="#">ADMIN</a></li>
             </ul>
         </nav>
-      </div>
-    </header>
-
-<html>
-    <head>
-        <title>Create a blog</title>
-    </head>
-        
-        <body>
+    
+        <form>
             <div class=".createblog">
-                <h2>Create your blog below</h2>
+                <h2>CREATE YOUR BLOG HERE</h2>
                 <div class="alert"></div>
 
                 <form id="createblog">
@@ -47,22 +31,20 @@
                         <input type="text" name="title" value="" placeholder="Type your blog title" id="title">
                 </div>
 
-                    <div class="txtb">
+                <div class="txtb">
                         <input type="text" name="author" value="" placeholder="Author's Name" id="author">
                 </div>
         
                 <div class="txtb">
                     <input type="text" name="content" value="" placeholder="Type your blog content" id="content">
-                
                     <textarea></textarea>
                 </div>
-
-                <div class="txtb">
-                    <input type="text" name="image" value="" placeholder="Blog Image" id="author">
-            </div>
+                <div>
+                    <label>Image</label>
+                    <input type="file" name="image" class="text-input">
+                </div>
     
             <input type="submit" id="insert" value="PUBLISH YOUR BLOG">
-    
         </form>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->

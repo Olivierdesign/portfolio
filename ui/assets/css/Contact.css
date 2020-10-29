@@ -173,8 +173,9 @@ a:hover,a.active{
     color: #00ffee;
 }
 .contactForm{
-    width: 40%;
-    padding: 40px;
+    width: 60%;
+    padding: 50px;
+    border-radius: 10px;
     background: rgb(159, 167, 163);
 }
 .contactForm h2{
@@ -185,7 +186,7 @@ a:hover,a.active{
 .contactForm .inputBox{
     position: relative;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .contactForm .inputBox input,
 .contactForm .inputBox textarea{
@@ -193,8 +194,9 @@ a:hover,a.active{
     padding: 5px 0;
     font-size: 16px;
     margin: 10px 0;
+    border-radius: 4px;    
+    border-bottom: 2px solid rgb(159, 158, 158);
     border: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
     outline: none;
     resize: none;
 }
@@ -206,7 +208,7 @@ a:hover,a.active{
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: rgb(38, 37, 37);   
+    color: rgb(108, 99, 99);   
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
@@ -220,7 +222,7 @@ a:hover,a.active{
 .contactForm .inputBox input[type="submit"]
 {
     width: 100px;
-    background: #00bcd4;
+    background: #006a2c;
     color: #fff;
     border: none;
     cursor: pointer;

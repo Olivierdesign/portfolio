@@ -2,7 +2,7 @@ body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;;
 	padding: 20;
     margin: 0;
-    background-color: #e2debf;
+    background-color: #606159;
 }
 
 .container {
@@ -19,17 +19,17 @@ margin-top: 10%;
 	color: white;
 }
 
-.textalign h1{
+.textalign h2{
     text-align: center;
     margin-top: 20px;
-	font-size: 40px;
+	font-size: 50px;
 	color: white;
 }
 
 img{
     width: max-content;
     margin-left: 200px;
-    padding: 100px;
+	padding: 100px;
 }
 
 div {
@@ -44,7 +44,7 @@ ul{
 /* Header */
 label.logo{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 80px;
     padding: 0 30px;
     font-weight: bold;
@@ -88,12 +88,18 @@ a.active, a:hover{
 }
 @media (max-width:952px){
     label.logo{
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 50px;
     }
     nav ul li a{
         font-size: 16px;
 
+    }
+    .textalign h2{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 35px;
+        color: white;
     }
 }
 @media (max-width:858px){
@@ -127,90 +133,30 @@ a:hover,a.active{
     left: 0;
   }
 }
-#showcase h1{
+}
+#showcase h2{
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 100px;
 }
-
-header{
-    background-color: #35424a;	
-    color: #ffffff;
-	padding-top: 30px;
-	min-height: 70px;
-	border-bottom:#a8491d 3px solid;	
+section{
+    background: url(../img/standwork.jpeg);
+    background-size: cover;
+    height: calc(100vh - 80px);
 }
-
-.admin-wrapper {
-    display: flex;
-    height: calc(100%-66px);
-}
-
-.admin-wrapper .left-sidebar {
-    flex: 2;
-    height: 100%;
-    background: #94d4d8;
-}
-
-.admin-wrapper .left-sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-.admin-wrapper .left-sidebar ul li a {
-    padding: 18px;
+.section::after{
+    content: "";
     display: block;
-    border-bottom: 1px solid black;
-}
-
-.admin-wrapper .left-sidebar ul li a:hover {
-    background: chartreuse;
-}
-
-.admin-wrapper .admin-content {
-    flex: 8;
+    width: 100%;
     height: 100%;
-    padding: 40px 100px 100px;
-    overflow-y: scroll;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: 0;
 }
-
-.admin-content .page-title {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-table {
-    width: 400px;
-    border-collapse: collapse;
-    font-size: 1.1rem;
-    margin-bottom: 50px;
-}
-
-th,
-td {
-    padding: 15px;
-    text-align: center;
-    border-bottom: 1px solid orange;
-}
-
-.update {
-    color: green;
-}
-.delete {
-    color: red;
-}
-.publish {
-    color: blue;
-}
-
-.update:hover,
-.delete:hover,
-.publish:hover {
-    text-decoration: underline;
-}
-
-form div {
-    margin-bottom: 15px;
+.section >* {
+    z-index: 10;
+    position: relative;
 }

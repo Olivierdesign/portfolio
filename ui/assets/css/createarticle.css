@@ -2,34 +2,12 @@ body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;;
 	padding: 20;
     margin: 0;
-    background-color: #fafafa;
+    background-color: #e4f3c2ba;
 }
 
 .container {
     display: flex;
     justify-content: center;
-}
-
- .textalign {
-margin-top: 10%;
-}
-.textalign p{
-    text-align: center;
-	font-size: 30px;
-	color: white;
-}
-
-.textalign h1{
-    text-align: center;
-    margin-top: 20px;
-	font-size: 40px;
-	color: white;
-}
-
-img{
-    width: max-content;
-    margin-left: 200px;
-    padding: 100px;
 }
 
 div {
@@ -139,31 +117,11 @@ a:hover,a.active{
     margin-bottom: 100px;
 }
 
-.contact-form{
-    width: 85%;
-    max-width: 600px;
-    background: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 20px #000000b3;
-    font-family: "Montserrat", sans-serif;
-}
-
-.contact-form h1{
-    margin-top: 0;
-    font-weight: 200px;
-}
 .txtb{
     border: 2px solid rgb(0, 0, 0);
     margin: 5px 0;
     padding: 12px 18px;
-    border-radius:15px;
+    border-radius:5px;
     width: 50%;
 }
 .txtb label{
