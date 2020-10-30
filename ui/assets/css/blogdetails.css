@@ -1,7 +1,6 @@
-
-
 /* Header */
-label.logo{
+label.logo
+{
     color: white;
     font-size: 40px;
     line-height: 80px;
@@ -30,7 +29,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 a.active, a:hover{
-    background: #476d1e;
+    background: #78836c;
     transition: .5s;
 }
 .checkbtn{
@@ -45,7 +44,16 @@ a.active, a:hover{
 #check{
     display: none;
 }
-@media (max-width:980px){
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}@media (min-width:952px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -85,4 +93,64 @@ a:hover,a.active{
 #check:checked ~ ul{
     left: 0;
   }
+}
+
+.contactForm{
+    width: 70%;
+    margin: 130px;
+    padding: 50px;
+    border-radius: 10px;
+    background: rgb(203, 216, 209);
+}
+.contactForm h2{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 70%;
+    margin-top: 15px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 4px;    
+    border-bottom: 2px solid rgb(159, 158, 158);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #006a2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 980px){
+    .contactInfo .nav{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}@media (max-width: 600px){
+    .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
 }

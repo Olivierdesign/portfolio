@@ -116,8 +116,8 @@ nav ul li a{
     font-size: 20px;
 }
 a:hover,a.active{
-    background: none;
-    color: rgb(239, 250, 114);
+    background: #ffffff;
+    color: rgb(80, 167, 55);
 }
 #check:checked ~ ul{
     left: 0;
