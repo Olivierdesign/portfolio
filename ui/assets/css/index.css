@@ -127,14 +127,14 @@ a:hover,a.active{
     left: 0;
   }
 }
-}
+
 #showcase h1{
     margin-top: 100px;
     font-size: 55px;
     margin-bottom: 100px;
 }
 section{
-    background: url(../img/thisone.jpeg);
+    background: url(../img/standwork.jpeg);
     background-size: cover;
     height: calc(100vh - 80px);
 }

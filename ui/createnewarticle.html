@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG BLOG</title>
+    <link rel="stylesheet" href="./assets/css/createnewarticle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">OliDeZiGn</label>
+        <ul>
+            <li><a href="Adminwelcome.html">Welcome</a></li>
+            <li><a href="Login.html">Logout</a></li>
+            <li><a href="Adminpage.html">ADMIN</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <form id="loginform" method="POST" class="contact-form">
+          <h2>CREATE YOUR BLOG HERE...</h2>
+
+          <form id="createblog">
+            <div class="txtb">
+                <input type="text" name="title" value="" placeholder="Type your blog title" id="title">
+        </div>
+
+        <div class="txtb">
+                <input type="text" name="author" value="" placeholder="Author's Name" id="author">
+        </div>
+
+        <div class="txtb">
+            <input type="text" name="content" value="" placeholder="Type your blog content" id="content">
+            <textarea></textarea>
+        </div>
+        <div>
+            <label>Image</label>
+            <input type="file" name="image" class="text-input">
+        </div>
+
+          <input type="submit" value="PUBLISH" class="btn">
+            <p id="notice"></p>
+    </form>
+
+</body>
+</html>

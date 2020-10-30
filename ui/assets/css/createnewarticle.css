@@ -2,12 +2,29 @@ body{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;;
 	padding: 20;
     margin: 0;
-    background-color: #e4f3c2ba;
+    background-image: url(../img/Work.jpeg);
+    background-size: cover;
 }
 
 .container {
     display: flex;
     justify-content: center;
+}
+
+ .textalign {
+margin-top: 10%;
+}
+.textalign p{
+    text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+.textalign h1{
+    text-align: center;
+    margin-top: 20px;
+	font-size: 40px;
+	color: white;
 }
 
 div {
@@ -18,6 +35,7 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+
 
 /* Header */
 label.logo{
@@ -111,25 +129,38 @@ a:hover,a.active{
     margin-bottom: 100px;
 }
 
-#showcase h1{
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 100px;
+.contact-form{
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
 }
 
+.contact-form h2{
+    margin-top: 0;
+    font-weight: 200px;
+}
 .txtb{
-    border: 2px solid rgb(0, 0, 0);
-    margin: 5px 0;
+    border: 1px solid gray;
+    margin: 8px 0;
     padding: 12px 18px;
-    border-radius:5px;
-    width: 50%;
+    border-radius: 5px;
 }
 .txtb label{
     display: block;
     text-align: left;
-    color: #000000;
+    color: #333333;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 4px;
 }
 .txtb input, .txtb textarea{
     width: 100%;
@@ -137,25 +168,15 @@ a:hover,a.active{
     background: none;
     outline: none;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 .btn{
     display: inline-block;
-    background: #88ff00;
-    padding: 14px 0;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    background: #01603b;
+    padding: 8px 0;
+    color: white;
     cursor: pointer;
     margin-top: 8px;
     width: 100px;
-}
-
-.alert {
-    height:1.5rem; 
-    width:100%; 
-    margin:0; 
-    padding:10; 
-    background-color: rgb(79, 172, 141);
-    text-align: center;
-    display: none;
+    float: center;
 }
