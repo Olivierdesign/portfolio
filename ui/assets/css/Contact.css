@@ -54,6 +54,16 @@ a.active, a:hover{
 
     }
 }
+@media (min-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
 @media (max-width:858px){
     .checkbtn{
         display: block;

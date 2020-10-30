@@ -44,7 +44,16 @@ a.active, a:hover{
 #check{
     display: none;
 }
-@media (max-width:952px){
+@media (max-width:980px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}@media (min-width:980px){
     label.logo{
         font-size: 25px;
         padding-left: 50px;
@@ -99,6 +108,7 @@ a:hover,a.active{
     background-color: #1b3e32;
     overflow: hidden;
     padding: 100px 0;
+
 }
 .inner-container{
     width: 55%;
@@ -115,7 +125,7 @@ a:hover,a.active{
 
 .text{
     font-size: 18px;
-    color: #545454;
+    color: #353535;
     line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
